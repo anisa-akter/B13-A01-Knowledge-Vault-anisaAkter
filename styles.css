@@ -1,0 +1,34 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-menu ul li {
+  list-style: none;
+}
+
+.nav-button button {
+  background-color: #30b868;
+  color: white;
+  border: 1px solid #30b868;
+  border-radius: 2px;
+  padding: 4px 5px;
+}
+
+button:hover {
+  background-color: #054b22;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(110, 110, 8);
+  color: white;
+  cursor: pointer;
+}
