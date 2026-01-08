@@ -1,12 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-height: 100vh;
-    padding-top: 16px;
-    padding-bottom: 16px;
+body {
+  min-height: 100vh;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav {
@@ -25,7 +25,7 @@ body{
   list-style: none;
 }
 
-.nav-button button {
+button {
   background-color: #30b868;
   color: white;
   border: 1px solid #30b868;
@@ -43,4 +43,37 @@ button:active {
   background-color: rgb(110, 110, 8);
   color: white;
   cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  background-image: url("./assets/hero-bg.png");
+  background-position: center;
+  background-size: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px;
+  border: red 1px solid;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+}
+
+.heading-top {
+  border: 1px solid white;
+  background-color: white;
+  color: #30b868;
+  border-radius: 10px;
+  padding: 5px 3px;
+}
+
+.description {
+  color: white;
+  text-align: center;
 }
