@@ -127,7 +127,7 @@ button:active {
   justify-content: center;
 }
 
-.second-brain-section-message{
+.second-brain-section-message {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -135,8 +135,8 @@ button:active {
 
 .second-brain-list ul li {
   list-style: none;
- position: relative;
-  padding-left: 30px;     /* Space for icon */
+  position: relative;
+  padding-left: 30px;
   margin-bottom: 10px;
 }
 
@@ -151,5 +151,4 @@ button:active {
   background-image: url("./assets/CheckCircle.png");
   background-size: contain;
   background-repeat: no-repeat;
-
 }
