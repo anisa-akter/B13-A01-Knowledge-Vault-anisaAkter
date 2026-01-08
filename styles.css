@@ -1,7 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid gold;
 }
 
 .nav-menu ul {
