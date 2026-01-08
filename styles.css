@@ -119,3 +119,37 @@ button:active {
   justify-content: center;
   padding: 20px;
 }
+
+.second-brain {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-brain-section-message{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.second-brain-list ul li {
+  list-style: none;
+ position: relative;
+  padding-left: 30px;     /* Space for icon */
+  margin-bottom: 10px;
+}
+
+.second-brain-list ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("./assets/CheckCircle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
