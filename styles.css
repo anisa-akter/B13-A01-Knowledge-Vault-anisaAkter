@@ -6,14 +6,14 @@
 }
 body {
   min-height: 100vh;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .nav-menu ul {
@@ -23,11 +23,17 @@ body {
 
 .nav-menu ul li {
   list-style: none;
-  font-weight: 500;
-  font-size: medium;
 }
 
-.nav-menu ul li:hover {
+.nav-menu ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: medium;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
   cursor: pointer;
   color: #30b868;
 }
@@ -40,6 +46,11 @@ button {
   padding: 10px 15px;
   font-size: 16px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 10px;
 }
 
 button:hover {
@@ -58,10 +69,10 @@ button:active {
   display: flex;
   background-image: url("./assets/hero-bg.png");
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   align-items: center;
   justify-content: center;
-  padding: 100px 40px;
+  padding: 120px 40px;
 }
 
 .banner-content {
@@ -73,7 +84,7 @@ button:active {
   row-gap: 16px;
 }
 
-.heading-top {
+.banner-heading-top {
   border: 1px solid white;
   background-color: white;
   color: #30b868;
@@ -84,14 +95,24 @@ button:active {
   align-items: center;
 }
 
-.banner .heading {
+.banner-heading {
   font-weight: 700;
   font-size: x-large;
 }
 
-.banner .description {
+.banner-description,
+.note-sub-heading {
   font-weight: lighter;
   font-size: small;
+  color: #908787;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
 }
 
 .circle-icon {
@@ -145,7 +166,7 @@ button:active {
   row-gap: 16px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgb(13, 58, 77);
+  margin-top: 40px;
 }
 .note-cards {
   display: flex;
@@ -157,7 +178,7 @@ button:active {
 .card {
   border: 1px solid white;
   border-radius: 5px;
-  background-color: rgb(240, 230, 176);
+  background-color: rgb(251, 251, 250);
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -166,6 +187,8 @@ button:active {
   padding: 10px;
   width: 1/4;
   text-align: center;
+  /* box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card .card-title {
@@ -195,7 +218,6 @@ button:active {
   gap: 16px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgb(77, 13, 77);
   width: 80%;
 }
 
@@ -206,9 +228,17 @@ button:active {
   width: 50%;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
 .second-brain-message {
   font-weight: 600;
-  color: #054b22;
+  color: #2bd471;
 }
 .second-brain-title h1 {
   font-size: 36px;
@@ -247,6 +277,10 @@ button:active {
   justify-content: center;
   row-gap: 16px;
   padding: 30px;
+  background-color: #62738225;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .early-access-title {
@@ -259,14 +293,7 @@ button:active {
 .early-access-ending-message {
   color: #787575;
   text-align: center;
-}
-
-.early-access-button button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  gap: 10px;
+  line-height: 1.5;
 }
 
 .footer {
@@ -274,6 +301,7 @@ button:active {
   text-align: center;
   background-color: rgba(0, 25, 49, 1);
   color: white;
+  margin-top: 40px;
 }
 
 .footer-logo-and-social {
@@ -284,4 +312,28 @@ button:active {
 }
 .footer-copyright {
   margin-top: 40px;
+}
+
+.footer-social-row img {
+  cursor: pointer;
+}
+.footer-social-row img:hover {
+  transform: scale(2);
+}
+
+.text-white {
+  color: white;
+}
+.text-accent {
+  color: rgba(48, 184, 104, 1);
+}
+.footer-social-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.footer-hr {
+  height: 1px;
+  border: none;
+  background-color: white;
 }
